@@ -85,6 +85,7 @@ class LoadXMLAction
      */
     public void actionPerformed(ActionEvent aIgnore) {
     //TODO: Reuse spring mail support to handle the attachment\nnow convert the mail attachments and put it to the msg
+    //only add named attachments
         LOG.info("load file called");
         if (mChooser.showOpenDialog(mParent) == JFileChooser.APPROVE_OPTION) {
             LOG.info("Need to load a file");
