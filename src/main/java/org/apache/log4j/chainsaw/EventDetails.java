@@ -95,7 +95,7 @@ class EventDetails {
 
     /** @see #mTimeStamp **/
     long getTimeStamp() {
-        //TODO: if exchange.isFailed() then out could potential be in - (what should we do)
+        //we got a response to write
         return mTimeStamp;
     }
 
