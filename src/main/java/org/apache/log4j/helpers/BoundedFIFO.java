@@ -43,6 +43,7 @@ public class BoundedFIFO {
   public
   BoundedFIFO(int maxSize) {
 	  //TODO how to encode as a href?
+	  //must not include :// in endpoint link\nTODO: might need to use org.apache.camel.util.UnsafeUriCharactersEncoder to safely encode URI for the web
    if(maxSize < 1) {
       throw new IllegalArgumentException("The maxSize argument ("+maxSize+
 			    ") is not a positive integer.");
