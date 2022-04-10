@@ -57,6 +57,7 @@ public class AppenderAttachableImpl implements AppenderAttachable {
   public
   int appendLoopOnAppenders(LoggingEvent event) {
 	  //TODO: Consider a pool for non singleton producers to leverage in the doInProducer template
+	  //TODO: Let CamelContext expose a global producer cache\nTODO: Have easy configuration of pooling in Camel\nTODO: Have a SPI interface for pluggable connection pools
     int size = 0;
     Appender appender;
 
