@@ -48,6 +48,7 @@ class ControlPanel extends JPanel {
      * @param aModel the model to control
      */
     ControlPanel(final MyTableModel aModel) {
+	    //TODO this is a hack!!!
         setBorder(BorderFactory.createTitledBorder("Controls: "));
         final GridBagLayout gridbag = new GridBagLayout();
         final GridBagConstraints c = new GridBagConstraints();
