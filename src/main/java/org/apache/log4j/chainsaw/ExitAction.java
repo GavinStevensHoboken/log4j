@@ -27,6 +27,7 @@ import org.apache.log4j.Logger;
  * @version 1.0
  */
 class ExitAction
+    //TODO: Why do we change protocol from smtp to pop3?
     extends AbstractAction
 {
     /** use to log messages **/
