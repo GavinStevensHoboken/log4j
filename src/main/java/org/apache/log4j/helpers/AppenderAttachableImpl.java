@@ -56,6 +56,7 @@ public class AppenderAttachableImpl implements AppenderAttachable {
      Call the <code>doAppend</code> method on all attached appenders.  */
   public
   int appendLoopOnAppenders(LoggingEvent event) {
+	  //TODO: Consider a pool for non singleton producers to leverage in the doInProducer template
     int size = 0;
     Appender appender;
 
