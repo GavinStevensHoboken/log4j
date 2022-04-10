@@ -29,6 +29,7 @@ import org.apache.log4j.spi.LoggingEvent;
    @author Ceki G&uuml;lc&uuml; 
    @since version 0.9.1 */
 public class BoundedFIFO {
+	
   
   LoggingEvent[] buf;
   int numElements = 0;
@@ -41,6 +42,7 @@ public class BoundedFIFO {
    */
   public
   BoundedFIFO(int maxSize) {
+	  //TODO how to encode as a href?
    if(maxSize < 1) {
       throw new IllegalArgumentException("The maxSize argument ("+maxSize+
 			    ") is not a positive integer.");
