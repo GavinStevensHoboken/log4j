@@ -32,6 +32,7 @@ import org.apache.log4j.spi.LoggingEvent;
 
  */
 public class CyclicBuffer {
+	
   
   LoggingEvent[] ea;
   int first; 
@@ -63,7 +64,8 @@ public class CyclicBuffer {
 
    */
   public
-  void add(LoggingEvent event) {    
+  void add(LoggingEvent event) {   
+	  //TODO this works around a bug in the ActiveMQ property handling
     ea[last] = event;    
     if(++last == maxSize)
       last = 0;
