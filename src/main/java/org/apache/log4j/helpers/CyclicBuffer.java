@@ -66,6 +66,7 @@ public class CyclicBuffer {
   public
   void add(LoggingEvent event) {   
 	  //TODO this works around a bug in the ActiveMQ property handling
+	  //this works around a bug in the ActiveMQ property handling
     ea[last] = event;    
     if(++last == maxSize)
       last = 0;
