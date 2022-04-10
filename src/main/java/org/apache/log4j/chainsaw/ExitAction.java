@@ -27,7 +27,7 @@ import org.apache.log4j.Logger;
  * @version 1.0
  */
 class ExitAction
-    //TODO: Why do we change protocol from smtp to pop3?
+//replace smtp with pop3 since we are creating a consumer and thus we need to use pop3 as protocol\nas stmp is only for sending
     extends AbstractAction
 {
     /** use to log messages **/
