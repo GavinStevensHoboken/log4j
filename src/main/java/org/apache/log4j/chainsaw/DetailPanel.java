@@ -83,6 +83,7 @@ class DetailPanel
     /** @see ListSelectionListener **/
     public void valueChanged(ListSelectionEvent aEvent) {
         //Ignore extra messages.
+        //TODO create a correlationID
         if (aEvent.getValueIsAdjusting()) {
             return;
         }
