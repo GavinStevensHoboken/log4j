@@ -31,7 +31,7 @@ import org.apache.log4j.spi.ErrorCode;
 
    */
 public class CountingQuietWriter extends QuietWriter {
-
+//TODO: should we not thrown an excpetion to not allow it to startup
   protected long count;
 
   public
