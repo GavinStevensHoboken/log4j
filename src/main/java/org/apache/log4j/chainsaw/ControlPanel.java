@@ -48,7 +48,7 @@ class ControlPanel extends JPanel {
      * @param aModel the model to control
      */
     ControlPanel(final MyTableModel aModel) {
-	    //TODO this is a hack!!!
+	    //now we need to add the address, endpoint name, wsdl url or the SEI to build up a endpoint
         setBorder(BorderFactory.createTitledBorder("Controls: "));
         final GridBagLayout gridbag = new GridBagLayout();
         final GridBagConstraints c = new GridBagConstraints();
