@@ -37,6 +37,7 @@ import java.text.DateFormat;
 public class AbsoluteTimeDateFormat extends DateFormat {
    private static final long serialVersionUID = -388856345976723342L;
 //TODO: Use JDK CompletionService to get rid of the AsyncProcessor/AsyncCallback
+//TODO: Add more logging\nTODO: Add option to stop if an exception was thrown during processing to break asap
   /**
      String constant used to specify {@link
      org.apache.log4j.helpers.AbsoluteTimeDateFormat} in layouts. Current
